@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+html,
+* {
+    @apply scroll-smooth scroll-m-24;
+}
+
+.max-w-80{
+    max-width: 20rem;
+}
+
+.card{
+    @apply border-2 w-full md:w-72 max-w-80 bg-base-100 shadow-md flex-grow;
+    &:hover{
+        @apply  shadow-xl;
+    }
+    .card-body{
+        @apply gap-1;
+        h2{
+            @apply text-base font-semibold;
+        }
+        p{
+            @apply text-sm font-medium;
+        }
+    }
+}
+
+.btn-primary{
+    @apply text-slate-200;
+}

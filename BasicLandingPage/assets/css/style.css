@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+html,
+* {
+  @apply scroll-smooth scroll-m-24;
+}
+
+.btn-base-2 {
+  @apply bg-orange-600 text-slate-200;
+}
+.btn-base-2:hover {
+  @apply bg-orange-700;
+}
+
+.btn-base-3 {
+  @apply bg-slate-800 text-slate-200;
+}
+.btn-base-3:hover {
+  @apply bg-slate-950;
+}
+
+.brand {
+  @apply w-40 h-auto rounded-lg border border-gray-300;
+}
+
+#header-section {
+  @apply z-50 fixed top-0 left-[50%] translate-x-[-50%] w-full max-w-[1440px] mx-auto flex items-center justify-center font-medium lg:py-2 bg-transparent glass rounded-b-md;
+}
+
+#home-section {
+  @apply relative max-w-[1440px] h-screen mx-auto flex items-center justify-center flex-col lg:flex-row pt-20 lg:pt-24 overflow-hidden rounded-lg;
+}
+
+#features-section {
+  @apply max-w-[1440px] mx-auto;
+}
+#features-section .tabs {
+  @apply w-full md:w-8/12 p-4 md:p-0 md:py-2 mt-4 gap-2 md:gap-4 bg-gray-100 rounded-md sm:bg-transparent sm:rounded-none;
+}
+#features-section .tabs .tab {
+  @apply sm:btn sm:gap-0 rounded-md flex-grow;
+}
+#features-section .tabs .tab:hover, #features-section .tabs .tab:focus {
+  @apply scale-105 bg-orange-600;
+}
+#features-section .tabs .core-feature {
+  @apply bg-gray-500 text-white font-medium;
+}
+#features-section .tabs .style-feature {
+  @apply bg-gray-500 text-white font-medium;
+}
+#features-section .tabs .seo-feature {
+  @apply bg-gray-500 text-white font-medium;
+}
+#features-section .card {
+  @apply relative w-full max-w-sm lg:max-w-md flex-grow shadow-xl border border-gray-200 bg-orange-50 m-0 transition-all duration-300 select-none;
+}
+#features-section .card .card-front {
+  z-index: 2;
+  @apply bg-red-50 rounded-2xl transition-all duration-300;
+}
+#features-section .card .card-front figure {
+  @apply hidden p-8 pb-0;
+}
+#features-section .card .card-front figure i {
+  @apply text-6xl text-slate-800;
+}
+#features-section .card .card-front .card-body {
+  @apply flex items-center justify-center;
+}
+#features-section .card .card-front .card-body .card-title {
+  @apply relative w-fit text-3xl font-bold text-orange-500 pb-4 text-center;
+}
+#features-section .card .card-front .card-body .card-title .card-title-highlighter {
+  @apply absolute -bottom-1 p-1 bg-orange-500 w-8/12 left-[50%] translate-x-[-50%] rounded;
+}
+#features-section .card .card-front .card-body .card-description {
+  @apply text-lg text-center font-medium pt-2 w-full text-gray-500;
+}
+#features-section .card .card-back-anime {
+  @apply absolute top-0 left-0 w-full h-full rounded-2xl bg-blue-950 transition-all duration-300;
+}
+#features-section .card:hover .card-back-anime {
+  @apply top-2 -left-2;
+}
+#features-section .card:hover .card-front {
+  @apply bg-white;
+}
+
+#pricing-section {
+  @apply max-w-[1440px] mx-auto bg-purple-100 md:p-10 xl:p-20 my-2 rounded-md;
+}
+#pricing-section .card .card-body {
+  @apply gap-4;
+}
+
+#faq-section {
+  @apply max-w-[1440px] mx-auto md:p-10 xl:p-20 my-2 rounded-md;
+}
+#faq-section .collapse {
+  @apply border border-gray-200 bg-white shadow-xl rounded-lg m-3 p-1 w-full md:w-8/12;
+}
+#faq-section .collapse .collapse-title {
+  @apply font-medium md:text-lg;
+}
+#faq-section .collapse .collapse-content {
+  @apply font-normal;
+}
+
+#contact-section {
+  @apply max-w-[1440px] mx-auto bg-orange-100 md:p-10 xl:p-20 my-2 rounded-md;
+}
+#contact-section form {
+  @apply w-full h-full flex items-center justify-center flex-col m-3 gap-2;
+}
+#contact-section form .input,
+#contact-section form .textarea {
+  @apply w-full;
+}
+#contact-section .card .card-body {
+  @apply p-4 md:p-8;
+}
+
+#bannerContainer {
+  @apply max-w-[1440px] mx-auto md:p-10 xl:p-20 my-2 rounded-md;
+}
+
+footer .link {
+  @apply font-medium;
+}
+footer .link:hover {
+  letter-spacing: 1px;
+  @apply text-orange-600 no-underline;
+}/*# sourceMappingURL=style.css.map */
